@@ -1,0 +1,33 @@
+teknodemo
+
+designpisteet:
+
+'rivi'			event
+
+0-128			ei mit‰‰n erikoista
+128-->			ride beesiin
+196-448			bassosyna feidaa sis‰‰n (ride messiss‰)
+440,443,446		filli-iskut
+448-->			clapsi mukana
+636-644			filli
+644-->			yksi syna lis‰‰
+784-->
+800-->864		suvanto
+832-848			tuplaride
+848-864			takabasari
+	862		isku
+864-1792		t‰ysmeisinki p‰‰ll‰ 
+1404.1406		filli
+1792-1920		suvanto
+	1888-1920	triplaridet
+	1904-1920	takabasari
+1920-2364		viel‰ t‰ydempi meininki p‰‰ll‰:)		
+2364-2372		filli	
+2372-2562		v‰h‰n eri meininki kui ennen filli‰
+2562-2812		osa saundeista tippuu pois. kevyemp‰‰...
+2808,2811,2814		filli
+2816-3068		viel‰kin 'kevyemp‰‰'
+3072			Loppu
+
+
+
