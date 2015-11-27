@@ -67,16 +67,16 @@ void Demo::run()
 //	modplay.play();	
 
 	StreamPlay streamplay;
-//	streamplay.loadStream("data\\milssi.mp3");
+	streamplay.loadStream("data\\milssi.mp3");
 
-/*
+
 	while(GetTickCount()<startCount+2000)
 	{
 		wnd->checkWindowMessages();
 	};
-*/
-//	streamplay.play();
-	startCount = GetTickCount(); //-400;
+
+	streamplay.play();
+	startCount = GetTickCount()-400;
 
 //	int kekkuli=startCount-GetTickCount();
 
@@ -196,5 +196,5 @@ void Demo::run()
 	}
 //	modplay.stop();
 
-//	streamplay.stop();
+	streamplay.stop();
 }
