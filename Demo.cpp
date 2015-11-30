@@ -77,6 +77,8 @@ void Demo::run()
 */
 //	streamplay.play();
 	startCount = GetTickCount()-1000*60*5;
+	/*testing*/
+	startCount=GetTickCount()-99000;
 
 //	int kekkuli=startCount-GetTickCount();
 

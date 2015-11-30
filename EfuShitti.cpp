@@ -3274,7 +3274,9 @@ void EfuShitti::draw_lukko(int count)
 		} else {
 			bri=1;
 		}
-		t=__t;
+		/*testing*/
+		t=__t/40;
+		//t=2;
 		if((int)(t)%4==0) {
 			if((int)(t*2)%8==0) {
 				scale=0.025;
@@ -3336,6 +3338,8 @@ void EfuShitti::gantzJuttu(int sides, double rotate, double kirkkaus, double wid
 	glDepthMask(GL_FALSE);
 	glDisable(GL_CULL_FACE);
 	glEnable(GL_BLEND);
+	/*testing*/
+	glDisable(GL_TEXTURE_2D);
 
 	if (sides>0)
 	{
