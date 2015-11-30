@@ -2613,6 +2613,9 @@ void piirra_sylinteri(float kaannos,float z, float aika)
 //	int cylkoko=24;	
 	int cylkoko=20;	
 
+
+	t=100;
+	tt=100;
 	if(tt<128||tt>=3072) {
 		tx=t/8;
 	} else if (tt>=128&&tt<448||tt>2816&&tt<3068){
@@ -3133,6 +3136,11 @@ void EfuShitti::draw_lukko(int count)
 	float t=150.0*count/1000.0/60.0;
 	float tp=t;
 	int tt=(t-1)*4;
+	float __t;
+
+	__t=t;
+	t=150;
+	tt=66100;
 
 	set_lukko_gl(count);
 
@@ -3266,6 +3274,7 @@ void EfuShitti::draw_lukko(int count)
 		} else {
 			bri=1;
 		}
+		t=__t;
 		if((int)(t)%4==0) {
 			if((int)(t*2)%8==0) {
 				scale=0.025;
@@ -3533,6 +3542,7 @@ void EfuShitti::lukko(int count)
 //		draw_lukko(count);
 		drawOrtho(wnd->scrXres,wnd->scrYres,texture[2]);
 		glDisable(GL_DEPTH_TEST);
+		if(0)
 		for (i=3;i<=8;i++) {
 			texture[i]->filtering=true;
 			texture[i]->params();
@@ -3567,9 +3577,9 @@ void EfuShitti::lukko(int count)
 	}
 
 
-	if (tt>=3072) drawOrthoAlpha_zoom(1, wnd->scrXres/2-128, wnd->scrYres/2+128, wnd->scrXres/2+128-1, wnd->scrYres/2-128+1, wnd->scrXres, wnd->scrYres, texture[14]);
-	if (tt<220) drawOrthoAlpha_zoom(tt/55.0, wnd->scrXres/2-256, wnd->scrYres/2+32+10, wnd->scrXres/2+256-1, wnd->scrYres/2-32+1+10, wnd->scrXres, wnd->scrYres, texture[15]);
-	else if (tt<440) drawOrthoAlpha_zoom(1-(tt-220)/220.0, wnd->scrXres/2-256, wnd->scrYres/2+32+10, wnd->scrXres/2+256-1, wnd->scrYres/2-32+1+10, wnd->scrXres, wnd->scrYres, texture[15]);
+//	if (tt>=3072) drawOrthoAlpha_zoom(1, wnd->scrXres/2-128, wnd->scrYres/2+128, wnd->scrXres/2+128-1, wnd->scrYres/2-128+1, wnd->scrXres, wnd->scrYres, texture[14]);
+//	if (tt<220) drawOrthoAlpha_zoom(tt/55.0, wnd->scrXres/2-256, wnd->scrYres/2+32+10, wnd->scrXres/2+256-1, wnd->scrYres/2-32+1+10, wnd->scrXres, wnd->scrYres, texture[15]);
+//	else if (tt<440) drawOrthoAlpha_zoom(1-(tt-220)/220.0, wnd->scrXres/2-256, wnd->scrYres/2+32+10, wnd->scrXres/2+256-1, wnd->scrYres/2-32+1+10, wnd->scrXres, wnd->scrYres, texture[15]);
 //	if (tt==440||tt==441||tt==442) drawOrthoAlpha_zoom(1, wnd->scrXres/2-256*2, wnd->scrYres/2+32*2, wnd->scrXres/2+256*2-1, wnd->scrYres/2-32*2+1, wnd->scrXres, wnd->scrYres, texture[15]);
 //	if (tt==443||tt==444||tt==445) drawOrthoAlpha_zoom(1, wnd->scrXres/2-256*4, wnd->scrYres/2+32*4, wnd->scrXres/2+256*4-1, wnd->scrYres/2-32*4+1, wnd->scrXres, wnd->scrYres, texture[15]);
 //	if (tt==446||tt==447) drawOrthoAlpha_zoom(1, wnd->scrXres/2-256*8, wnd->scrYres/2+32*8, wnd->scrXres/2+256*8-1, wnd->scrYres/2-32*8+1, wnd->scrXres, wnd->scrYres, texture[15]);

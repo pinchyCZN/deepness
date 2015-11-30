@@ -76,7 +76,7 @@ void Demo::run()
 	};
 */
 //	streamplay.play();
-	startCount = GetTickCount()-400;
+	startCount = GetTickCount()-1000*60*5;
 
 //	int kekkuli=startCount-GetTickCount();
 
